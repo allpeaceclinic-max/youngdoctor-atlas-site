@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko" data-base="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4층 자동화·운영 (launchd / 작업 스케줄러) × ③ — 영닥터 아틀라스</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="../assets/site.css?v=f8825d54">
+  <script type="module" src="../assets/app.js?v=f8825d54"></script>
+</head>
+<body class="page-cell">
+<header class="site-head">
+  <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">◫</span><span class="brand-title">영닥터 아틀라스</span><span class="brand-sub">영닥터의 열린 AI 작업실</span></a>
+  <nav class="site-nav" aria-label="주 메뉴"><a href="../index.html">지도</a><a href="../lectures.html">강의</a><a href="../list.html">목록</a><a href="../faq.html">FAQ</a><a href="../about.html">소개</a><a class="nav-ext" href="https://wiki.youngdoctor.kr/marktl/" target="_blank" rel="noopener">영닥터 아카이브 <span aria-hidden="true">↗</span></a></nav>
+  <form class="search" role="search" autocomplete="off" data-search>
+    <label class="visually-hidden" for="q">검색</label>
+    <input id="q" type="search" name="q" placeholder="제목·요약·함정·FAQ 검색" data-search-input>
+    <div class="search-results" data-search-results hidden></div>
+  </form>
+</header>
+<main id="main">
+<article class="cellpage">
+  <p class="meta"><a class="chip" href="../index.html">지도</a><span class="chip">L4-S3</span></p>
+  <h1>4층 자동화·운영 (launchd / 작업 스케줄러) × ③ 업무 진단자</h1>
+  <p class="lead">매일 저절로 돌게 하고, 죽은 것을 어떻게 아나</p>
+  <p class="order-label"><b>칸 안의 순서</b> 실전 6단계 — 3분할 → 병목 5신호 → 흐름 7칸 → 과제 문장 → 가장 작게 → 측정·검증</p>
+  <ol class="node-list"><li><a class="node-link " href="../nodes/L4-S3-drop-folder-inbox.html" data-status="planned" data-os="any" data-node-id="L4-S3-drop-folder-inbox"><span class="node-title">폴더에 넣으면 처리된다 — 가장 쉬운 반자동 입구</span><span class="badge badge-planned">만들 예정</span></a><span class="muted"> — 내 업무 흐름에서 「받아서 옮기는」 반복 칸을 골라, 지정 폴더에 파일을 떨어뜨리면 2분 안에 처리되는 입구를 설계한다 — 쓰기 완료 대기·해시로 중복 막기·processed와 failed 폴더가 설계의 전부다.</span></li><li><a class="node-link " href="../nodes/L4-S3-one-notify-exit.html" data-status="planned" data-os="any" data-node-id="L4-S3-one-notify-exit"><span class="node-title">모든 잡의 출구는 하나 — 「나에게 보내기」 알림 통로와 알림 피로</span><span class="badge badge-planned">만들 예정</span></a><span class="muted"> — 자동화마다 알림 방식을 따로 만들지 않고, 메신저 「나에게 보내기」 하나(1회 인증·두 달마다 재인증·200자 상한)를 모든 잡의 공통 출구로 두되, 「평소 매일 오던 것이 끊길 때만」 울리는 규칙으로 알림 피로를 막는다.</span></li><li><a class="node-link " href="../nodes/L4-S3-cloud-cron-minimal.html" data-status="planned" data-os="any" data-node-id="L4-S3-cloud-cron-minimal"><span class="node-title">내 컴퓨터가 꺼져 있어도 도는 잡 — 서버 cron 한 줄로 아침 일정 요약</span><span class="badge badge-planned">만들 예정</span></a><span class="muted"> — 맥이든 윈도우든 내 컴퓨터에 의존하지 않는 가장 작은 자동화로, 데이터베이스의 예약 기능이 매일 아침 함수 하나를 깨워 오늘 일정·마감을 요약해 메신저로 보내는 구조를 따라 만든다 — 외부 캘린더와의 동기화는 증분 토큰과 충돌 규칙이 핵심이다.</span></li></ol>
+  <h2>이 칸에 걸치는 노드</h2><ul class="node-list dotted"><li><a class="node-link " href="../nodes/L4-S2-running-jobs-30s.html" data-status="ready" data-os="any" data-node-id="L4-S2-running-jobs-30s"><span class="has-video" title="영상 있음" aria-label="영상 있음">▶</span><span class="node-title">내 컴퓨터에서 이미 저절로 도는 것들 — 30초 목록 읽기</span></a></li><li><a class="node-link " href="../nodes/L4-S2-first-daily-memo.html" data-status="ready" data-os="any" data-node-id="L4-S2-first-daily-memo"><span class="has-video" title="영상 있음" aria-label="영상 있음">▶</span><span class="node-title">매일 아침 저절로 오는 묵상 메모 한 통 — 첫 자동화는 AI 없이</span></a></li><li><a class="node-link " href="../nodes/L4-S6-session-ends-in-writeback.html" data-status="planned" data-os="any" data-node-id="L4-S6-session-ends-in-writeback"><span class="node-title">기록되지 않은 세션은 끝난 게 아니다 — BOOT·WRITE-BACK 규약과 세션 훅</span><span class="badge badge-planned">만들 예정</span></a></li></ul>
+  
+</article>
+</main>
+<aside class="archive-band" aria-label="함께 보는 곳">
+  <a href="https://wiki.youngdoctor.kr/marktl/" target="_blank" rel="noopener"><span class="ab-k">함께 보는 곳</span><b>영닥터 아카이브</b><span class="ab-d">설교 리뷰 · 주제 노트 · 북노트 · 강의와 행사 기록 — 아틀라스가 「어떻게 만드나」라면 아카이브는 「무엇이 나왔나」입니다</span><span class="ab-go" aria-hidden="true">↗</span></a>
+</aside>
+<footer class="site-foot">
+  <p>글·영상 CC BY-SA 4.0 · 코드 MIT · <a href="../about.html">소개와 공개 원칙</a></p>
+  <p class="foot-controls">
+    <span class="control">테마 <button type="button" class="chip" data-theme-toggle aria-live="polite">자동</button></span>
+    <span class="control">내 OS <span class="seg" role="radiogroup" aria-label="OS 선택">
+      <button type="button" class="chip" data-os="mac" role="radio" aria-checked="false">맥</button><button type="button" class="chip" data-os="win" role="radio" aria-checked="false">윈도우</button><button type="button" class="chip" data-os="phone" role="radio" aria-checked="false">폰</button></span></span>
+    <label class="control"><input type="checkbox" data-show-planned> 만들 예정 보기</label>
+  </p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko" data-base="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4층 자동화·운영 (launchd / 작업 스케줄러) × ④ — 영닥터 아틀라스</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="../assets/site.css?v=f8825d54">
+  <script type="module" src="../assets/app.js?v=f8825d54"></script>
+</head>
+<body class="page-cell">
+<header class="site-head">
+  <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">◫</span><span class="brand-title">영닥터 아틀라스</span><span class="brand-sub">영닥터의 열린 AI 작업실</span></a>
+  <nav class="site-nav" aria-label="주 메뉴"><a href="../index.html">지도</a><a href="../lectures.html">강의</a><a href="../list.html">목록</a><a href="../faq.html">FAQ</a><a href="../about.html">소개</a><a class="nav-ext" href="https://wiki.youngdoctor.kr/marktl/" target="_blank" rel="noopener">영닥터 아카이브 <span aria-hidden="true">↗</span></a></nav>
+  <form class="search" role="search" autocomplete="off" data-search>
+    <label class="visually-hidden" for="q">검색</label>
+    <input id="q" type="search" name="q" placeholder="제목·요약·함정·FAQ 검색" data-search-input>
+    <div class="search-results" data-search-results hidden></div>
+  </form>
+</header>
+<main id="main">
+<article class="cellpage">
+  <p class="meta"><a class="chip" href="../index.html">지도</a><span class="chip">L4-S4</span></p>
+  <h1>4층 자동화·운영 (launchd / 작업 스케줄러) × ④ 과제 설계자</h1>
+  <p class="lead">매일 저절로 돌게 하고, 죽은 것을 어떻게 아나</p>
+  <p class="order-label"><b>칸 안의 순서</b> 실전 6단계 — 3분할 → 병목 5신호 → 흐름 7칸 → 과제 문장 → 가장 작게 → 측정·검증</p>
+  <ol class="node-list"><li><a class="node-link " href="../nodes/L4-S4-proof-by-output-date.html" data-status="planned" data-os="any" data-node-id="L4-S4-proof-by-output-date"><span class="node-title">「자동 실행」이라 적힌 것을 믿지 않는다 — 산출물 날짜로 판정</span><span class="badge badge-planned">만들 예정</span></a><span class="muted"> — 문서에 「자동」이라 적혀 있어도 증거가 아니라는 것을 세 사례(설치된 적 없는 월간 스캔·권한에 막혀 0건이던 아침 브리핑·12일 멈춘 수집기)로 배우고, 자동화마다 「마지막 산출물 날짜」라는 숫자 하나를 측정 지표로 심는다.</span></li><li><a class="node-link " href="../nodes/L4-S4-silent-death-context.html" data-status="planned" data-os="any" data-node-id="L4-S4-silent-death-context"><span class="node-title">조용히 죽는 잡의 정체 — 코드가 아니라 실행 컨텍스트</span><span class="badge badge-planned">만들 예정</span></a><span class="muted"> — 「내 손에선 되는데」 하는 자동화 장애의 원인 다섯(예약 실행에는 없는 디스크 접근 권한·지워지는 임시 폴더의 로그·동기화 폴더 안의 실행본·여러 곳에 흩어진 자격증명·실행 주기와 같은 만료 주기)을 하나씩 재현하고, 자동화가 넘지 못하는 선인 「인증은 사람이 직접」을 설계에 넣는다.</span></li></ol>
+  <h2>이 칸에 걸치는 노드</h2><ul class="node-list dotted"><li><a class="node-link " href="../nodes/L4-S3-drop-folder-inbox.html" data-status="planned" data-os="any" data-node-id="L4-S3-drop-folder-inbox"><span class="node-title">폴더에 넣으면 처리된다 — 가장 쉬운 반자동 입구</span><span class="badge badge-planned">만들 예정</span></a></li><li><a class="node-link " href="../nodes/L4-S3-cloud-cron-minimal.html" data-status="planned" data-os="any" data-node-id="L4-S3-cloud-cron-minimal"><span class="node-title">내 컴퓨터가 꺼져 있어도 도는 잡 — 서버 cron 한 줄로 아침 일정 요약</span><span class="badge badge-planned">만들 예정</span></a></li></ul>
+  <h2>이 칸의 FAQ</h2><details class="faq"><summary>AI가 만들어 준 결과물을 매번 끝까지 다 읽고 확인하시나요?</summary><div class="faq-a">네, 그리고 「읽는다」보다 「대조한다」에 가깝습니다. AI는 뜻을 거꾸로 뒤집거나 없는 문장을 만들어 넣기도 해서, 오타를 찾는 눈이 아니라 「이 말이 내가 쓴 말과 같은 말인가」를 묻는 눈으로 봅니다. 그래서 기계 대조를 먼저 씁니다 — 원고와 산출물을 어절 단위로 비교해 바뀐 낱말만 뽑아 보면 사람 눈이 놓치는 것이 잡힙니다. 한 가지 더: 「오류 0건」은 검사가 잘 된 것과 검사기가 고장 난 것이 같은 모양이라, 일부러 틀린 것을 하나 심어 잡히는지 먼저 확인합니다. 등록됐다는 기록이 아니라 산출물의 날짜와 내용만이 증거입니다.</div></details>
+</article>
+</main>
+<aside class="archive-band" aria-label="함께 보는 곳">
+  <a href="https://wiki.youngdoctor.kr/marktl/" target="_blank" rel="noopener"><span class="ab-k">함께 보는 곳</span><b>영닥터 아카이브</b><span class="ab-d">설교 리뷰 · 주제 노트 · 북노트 · 강의와 행사 기록 — 아틀라스가 「어떻게 만드나」라면 아카이브는 「무엇이 나왔나」입니다</span><span class="ab-go" aria-hidden="true">↗</span></a>
+</aside>
+<footer class="site-foot">
+  <p>글·영상 CC BY-SA 4.0 · 코드 MIT · <a href="../about.html">소개와 공개 원칙</a></p>
+  <p class="foot-controls">
+    <span class="control">테마 <button type="button" class="chip" data-theme-toggle aria-live="polite">자동</button></span>
+    <span class="control">내 OS <span class="seg" role="radiogroup" aria-label="OS 선택">
+      <button type="button" class="chip" data-os="mac" role="radio" aria-checked="false">맥</button><button type="button" class="chip" data-os="win" role="radio" aria-checked="false">윈도우</button><button type="button" class="chip" data-os="phone" role="radio" aria-checked="false">폰</button></span></span>
+    <label class="control"><input type="checkbox" data-show-planned> 만들 예정 보기</label>
+  </p>
+</footer>
+</body>
+</html>

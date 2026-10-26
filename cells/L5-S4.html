@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko" data-base="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5층 산출 × ④ — 영닥터 아틀라스</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="../assets/site.css?v=f8825d54">
+  <script type="module" src="../assets/app.js?v=f8825d54"></script>
+</head>
+<body class="page-cell">
+<header class="site-head">
+  <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">◫</span><span class="brand-title">영닥터 아틀라스</span><span class="brand-sub">영닥터의 열린 AI 작업실</span></a>
+  <nav class="site-nav" aria-label="주 메뉴"><a href="../index.html">지도</a><a href="../lectures.html">강의</a><a href="../list.html">목록</a><a href="../faq.html">FAQ</a><a href="../about.html">소개</a><a class="nav-ext" href="https://wiki.youngdoctor.kr/marktl/" target="_blank" rel="noopener">영닥터 아카이브 <span aria-hidden="true">↗</span></a></nav>
+  <form class="search" role="search" autocomplete="off" data-search>
+    <label class="visually-hidden" for="q">검색</label>
+    <input id="q" type="search" name="q" placeholder="제목·요약·함정·FAQ 검색" data-search-input>
+    <div class="search-results" data-search-results hidden></div>
+  </form>
+</header>
+<main id="main">
+<article class="cellpage">
+  <p class="meta"><a class="chip" href="../index.html">지도</a><span class="chip">L5-S4</span></p>
+  <h1>5층 산출 × ④ 과제 설계자</h1>
+  <p class="lead">실제로 무엇이 나왔고, 어떻게 만들어졨나</p>
+  <p class="order-label"><b>칸 안의 순서</b> 실전 6단계 — 3분할 → 병목 5신호 → 흐름 7칸 → 과제 문장 → 가장 작게 → 측정·검증</p>
+  <ol class="node-list"><li><a class="node-link " href="../nodes/L5-S4-three-sources-four-docs.html" data-status="planned" data-os="any" data-node-id="L5-S4-three-sources-four-docs"><span class="node-title">소스 3종에서 문서 4종으로 — 구조화·서술형·기획안·메모</span><span class="badge badge-planned">만들 예정</span></a><span class="muted"> — 키노트 PDF와 메모, 초안 텍스트, 인터뷰 질문 중 하나로 시작해 구조화 → 서술형 → 기획안 → 발표자 메모 순으로 네 문서를 승인하며 만든다. 숫자를 심는다: 배정 시간의 1.7~2배 분량, 320자/분, 원고 보존율 95% 아래면 대본이 아니라 요약이다.</span></li><li><a class="node-link " href="../nodes/L5-S4-nblm-slides-split-and-prompt.html" data-status="planned" data-os="any" data-node-id="L5-S4-nblm-slides-split-and-prompt"><span class="node-title">생성형 슬라이드 만들기 — 20장 분할과 명시 디자인 프롬프트</span><span class="badge badge-planned">만들 예정</span></a><span class="muted"> — 기획안을 20장 이하 파트로 나눠 각 노트북에 그 파트만 올리고, 소스 네 종을 함께 넣고, 디자인은 자율(0줄) 아니면 Hex와 숫자로 못박은 명시 프롬프트 둘 중 하나를 고른다. 절충 지시는 밋밋하게 만들고, 번호·굵게 표시·강사용 안내 문장은 화면에 찍힌다.</span></li><li><a class="node-link " href="../nodes/L5-S4-genai-slide-review.html" data-status="planned" data-os="any" data-node-id="L5-S4-genai-slide-review"><span class="node-title">생성형 슬라이드 검수 — 뜻 대조·가짜 QR·한 장만 갈아 끼우기</span><span class="badge badge-planned">만들 예정</span></a><span class="muted"> — 생성 슬라이드는 통째로 이미지라 편집할 수 있는 것은 메모뿐이다. 오탈자가 아니라 「내가 쓴 말과 같은 말인가」로 전 장을 보고, QR은 디코더로 읽히는지 진짜 QR과 함께 양성 대조하고, 오류 장만 재생성하거나 픽셀로 고쳐 갈아 끼운다.</span></li><li><a class="node-link " href="../nodes/L5-S4-keynote-notes-inject.html" data-status="planned" data-os="mac" data-node-id="L5-S4-keynote-notes-inject"><span class="node-title">Keynote에 발표자 메모 넣기 — 열기는 셸, 대입은 JXA</span><span class="badge badge-planned">만들 예정</span></a><span class="muted"> — 생성 덱(PDF→이미지)으로 조립한 pptx를 로컬로 복사해 셸 open으로 열고, JXA는 이미 열린 문서에 메모를 대입하고 글자 크기를 맞추는 일만 한다. 큰 덱은 JPEG 재압축으로 임포트 한계를 피하고, 검증은 닫고 다시 열어 읽는다.</span></li><li><a class="node-link " href="../nodes/L5-S4-mockup-to-code-data-first.html" data-status="planned" data-os="any" data-node-id="L5-S4-mockup-to-code-data-first"><span class="node-title">시안을 데이터에 맞춘다 — 없는 슬롯은 지어내지 않고, 대비는 opacity로 만들지 않는다</span><span class="badge badge-planned">만들 예정</span></a><span class="muted"> — 받은 디자인 시안을 코드로 옮길 때 데이터가 없는 슬롯은 지어내지 않고 있는 데이터로 교체하고, 색 대비는 투명도가 아니라 실제 색으로 만들고, 표준 라이브러리만으로 정적 HTML을 뽑는다.</span></li><li><a class="node-link " href="../nodes/L5-S4-judgment-board-not-inventory.html" data-status="planned" data-os="any" data-node-id="L5-S4-judgment-board-not-inventory"><span class="node-title">진행판은 판단 화면이다 — 재고가 아니라 지금 할 것·판단할 것·접기</span><span class="badge badge-planned">만들 예정</span></a><span class="muted"> — 원본 파일 몇 개에서 자동으로 만드는 진행판을 설계한다. 전체 목록(재고)이 아니라 Drop/Hold/Go 판단 화면으로 가르고, 지표가 측정 대상을 틀리면 거짓 신호가 난다는 것(진행률 대신 조용한 일수)을 숫자 하나로 확인한다.</span></li><li><a class="node-link " href="../nodes/L5-S4-paper-genres-and-core.html" data-status="planned" data-os="any" data-node-id="L5-S4-paper-genres-and-core"><span class="node-title">논문 장르 7종과 공통 코어 — 검색 지도까지</span><span class="badge badge-planned">만들 예정</span></a><span class="muted"> — 종설·원저·사례 등 장르 7종이 공유하는 코어 단계(질문 → 검색 → 정독 → 초안 → 검토)를 익히고, 어디서 무엇을 찾는지(공개 API·도서관 프록시·국회도서관) 검색 지도를 그린다. 과제 문장 하나와 문헌 수 baseline을 정한다.</span></li></ol>
+  <h2>이 칸에 걸치는 노드</h2><ul class="node-list dotted"><li><a class="node-link " href="../nodes/L5-S3-one-lecture-one-folder.html" data-status="planned" data-os="any" data-node-id="L5-S3-one-lecture-one-folder"><span class="node-title">강의 하나 = 폴더 하나 — 문서 4종·덱·부속자료</span><span class="badge badge-planned">만들 예정</span></a></li><li><a class="node-link " href="../nodes/L5-S3-mentoring-three-outputs.html" data-status="planned" data-os="any" data-node-id="L5-S3-mentoring-three-outputs"><span class="node-title">멘토링 한 번에서 남기는 셋 — 전사·정리본·전달용</span><span class="badge badge-planned">만들 예정</span></a></li></ul>
+  
+</article>
+</main>
+<aside class="archive-band" aria-label="함께 보는 곳">
+  <a href="https://wiki.youngdoctor.kr/marktl/" target="_blank" rel="noopener"><span class="ab-k">함께 보는 곳</span><b>영닥터 아카이브</b><span class="ab-d">설교 리뷰 · 주제 노트 · 북노트 · 강의와 행사 기록 — 아틀라스가 「어떻게 만드나」라면 아카이브는 「무엇이 나왔나」입니다</span><span class="ab-go" aria-hidden="true">↗</span></a>
+</aside>
+<footer class="site-foot">
+  <p>글·영상 CC BY-SA 4.0 · 코드 MIT · <a href="../about.html">소개와 공개 원칙</a></p>
+  <p class="foot-controls">
+    <span class="control">테마 <button type="button" class="chip" data-theme-toggle aria-live="polite">자동</button></span>
+    <span class="control">내 OS <span class="seg" role="radiogroup" aria-label="OS 선택">
+      <button type="button" class="chip" data-os="mac" role="radio" aria-checked="false">맥</button><button type="button" class="chip" data-os="win" role="radio" aria-checked="false">윈도우</button><button type="button" class="chip" data-os="phone" role="radio" aria-checked="false">폰</button></span></span>
+    <label class="control"><input type="checkbox" data-show-planned> 만들 예정 보기</label>
+  </p>
+</footer>
+</body>
+</html>
